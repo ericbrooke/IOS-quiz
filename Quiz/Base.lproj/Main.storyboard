@@ -23,13 +23,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-FU-q2v">
-                                <rect key="frame" x="251" y="57" width="98" height="30"/>
-                                <state key="normal" title="Next Question"/>
-                                <connections>
-                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFc-cZ-7CX"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-mN-6i9">
                                 <rect key="frame" x="254" y="323" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
@@ -49,9 +42,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-FU-q2v">
+                                <rect key="frame" x="251" y="57" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFc-cZ-7CX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WjI-FU-q2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0NZ-Aj-jmq"/>
                             <constraint firstItem="WjI-FU-q2v" firstAttribute="top" secondItem="d6y-yl-YVN" secondAttribute="bottom" constant="16" id="2Ky-dY-9jY"/>
                             <constraint firstItem="lLE-4Y-mQG" firstAttribute="centerX" secondItem="WjI-FU-q2v" secondAttribute="centerX" id="KCM-x9-daA"/>
                             <constraint firstItem="lLE-4Y-mQG" firstAttribute="top" secondItem="WjI-FU-q2v" secondAttribute="bottom" constant="202" id="QOc-Cm-vnk"/>
@@ -63,13 +64,18 @@
                             <constraint firstItem="TCR-mN-6i9" firstAttribute="centerX" secondItem="WjI-FU-q2v" secondAttribute="centerX" id="ykm-xS-HMp"/>
                             <constraint firstItem="d6y-yl-YVN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ymu-2f-SQ8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="X6d-0x-KfN"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="lLE-4Y-mQG" id="QpK-B9-aD0"/>
                         <outlet property="currentQuestionLabel" destination="d6y-yl-YVN" id="QC5-iS-cl8"/>
-                        <outlet property="currentQuestionLabelCenterXConstraint" destination="X6d-0x-KfN" id="Gek-bO-XXb"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="gMa-fm-CyR" id="CEI-gr-UIZ"/>
                         <outlet property="nextQuestionLabel" destination="XTV-qM-Grs" id="6bi-bo-7Cr"/>
-                        <outlet property="nextQuestionLabelCenterXConstraint" destination="VQr-Xu-P8Z" id="wOT-DC-8dJ"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="VQr-Xu-P8Z" id="4lJ-kU-29E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
