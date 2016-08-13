@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -43,6 +43,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTV-qM-Grs">
+                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,7 +56,9 @@
                             <constraint firstItem="d6y-yl-YVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A5d-PS-Qzg"/>
                             <constraint firstItem="lLE-4Y-mQG" firstAttribute="centerX" secondItem="WjI-FU-q2v" secondAttribute="centerX" id="KCM-x9-daA"/>
                             <constraint firstItem="lLE-4Y-mQG" firstAttribute="top" secondItem="WjI-FU-q2v" secondAttribute="bottom" constant="202" id="QOc-Cm-vnk"/>
+                            <constraint firstItem="XTV-qM-Grs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQr-Xu-P8Z"/>
                             <constraint firstItem="d6y-yl-YVN" firstAttribute="centerX" secondItem="WjI-FU-q2v" secondAttribute="centerX" id="X6d-0x-KfN"/>
+                            <constraint firstItem="XTV-qM-Grs" firstAttribute="top" secondItem="d6y-yl-YVN" secondAttribute="top" id="kWa-0I-fJJ"/>
                             <constraint firstItem="TCR-mN-6i9" firstAttribute="top" secondItem="lLE-4Y-mQG" secondAttribute="bottom" constant="13" id="xwb-U3-eha"/>
                             <constraint firstItem="TCR-mN-6i9" firstAttribute="centerX" secondItem="WjI-FU-q2v" secondAttribute="centerX" id="ykm-xS-HMp"/>
                             <constraint firstItem="d6y-yl-YVN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ymu-2f-SQ8"/>
@@ -58,7 +66,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="lLE-4Y-mQG" id="QpK-B9-aD0"/>
-                        <outlet property="questionLabel" destination="d6y-yl-YVN" id="IKr-9w-HxE"/>
+                        <outlet property="currentQuestionLabel" destination="d6y-yl-YVN" id="QC5-iS-cl8"/>
+                        <outlet property="nextQuestionLabel" destination="XTV-qM-Grs" id="6bi-bo-7Cr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
